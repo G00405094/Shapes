@@ -1,31 +1,39 @@
 package ie.atu.week5;
 
 public class StudentDetails {
-    private double StuName;
-    private double StuEmail;
-    private double StuCourse;
+    private String StuName;
+    private String StuEmail;
+    private String StuCourse;
 
-    public double getStuName() {
-        return StuName;
+
+    public String getStuName() {return StuName;}
+
+    public void setStuName(String StuName) {
+        this.StuName = StuName;
     }
 
-    public void setStuName(double stuName) {
-        StuName = stuName;
-    }
-
-    public double getStuEmail() {
+    public String getStuEmail() {
         return StuEmail;
     }
 
-    public void setStuEmail(double stuEmail) {
-        StuEmail = stuEmail;
+    public void setStuEmail(String StuEmail) {
+        this.StuEmail = StuEmail;
     }
 
-    public double getStuCourse() {
+    public String getStuCourse() {
         return StuCourse;
     }
 
-    public void setStuCourse(double stuCourse) {
-        StuCourse = stuCourse;
+    public void setStuCourse(String StuCourse) {
+        this.StuCourse = StuCourse;
     }
+
+    public StudentDetails() {
+    }
+    public StudentDetails(String StuName, String StuEmail, String StuCourse){
+        this.StuName= StuName;
+        this.StuEmail=StuEmail;
+        this.StuCourse=StuCourse;
+    }
+
 }
