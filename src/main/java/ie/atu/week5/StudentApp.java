@@ -21,6 +21,7 @@ public class StudentApp {
         System.out.println("Please enter another name:");
         String StuName2 = input.nextLine();
         StudentDetails StudentN2 = new StudentDetails();
+        StudentN2.setStuName(StuName2);
 
         System.out.println("Please enter another Student Email:");
         String StuEmail2 = input.nextLine();
@@ -34,6 +35,8 @@ public class StudentApp {
         StudentDetails StudentN3 = new StudentDetails();
         System.out.println("Please enter another name:");
         String StuName3= input.nextLine();
+        StudentN3.setStuName(StuName3);
+
 
         System.out.println("Please enter another Student Email:");
         String StuEmail3 = input.nextLine();
